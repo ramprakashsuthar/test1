@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background: url(/images/main_bg.jpg) no-repeat center center fixed;
+    background: url(/images/main_bg.jpg) no-repeat center center fixed !important;
     background-size: cover;
     background-attachment: fixed;
 }
