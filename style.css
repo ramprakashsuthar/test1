@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(/images/main_bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.getId{
+    background: url(images/getid.png) no-repeat center;
+    background-size: contain;
+}
+.getId button {
+    background: transparent;
+    /* background: url(images/getid.png) no-repeat center;
+    background-size: contain; */
+    padding: 20px 35px;
+    border: 0;
+}
+
+.getId button a {
+    font-size: 22px;
+    padding: 25px;
+    color: #000;
+    font-weight: 600;
+}
+
+.modalImg img {
+    width: 50%;
+}
+
+.welcomeImg img {
+    width: 50%;
+}
+
+.welcomeText h1 {
+    color: #e8c330;
+    text-align: start;
+}
+
+.indiaContent h2 {
+    color: #fff;
+    padding: 20px 0;
+}
+
+.cta1 button a {
+    font-size: 22px;
+    padding: 25px;
+    color: #000;
+    font-weight: 600;
+}
+
+.cta1 button {
+    background: transparent;
+    background: url(images/getid.png) no-repeat center;
+    background-size: contain;
+    padding: 20px 35px;
+    border: 0;
+}
+
+.cta2 button a {
+    font-size: 22px;
+    padding: 25px;
+    color: #000;
+    font-weight: 600;
+}
+
+.cta2 button {
+    background: transparent;
+    background: url(images/getid.png) no-repeat center;
+    background-size: contain;
+    padding: 20px 35px;
+    border: 0;
+}
+
+.aboutOuter {
+    background-color: #282626;
+}
+
+.abtHeading h2 {
+    color: #00acff;
+}
+
+.abtPera p,
+.happyPera p, .whyPera p {
+    color: #fff;
+    /* font-weight: bold; */
+    font-size: 21px;
+text-align: center;
+}
+
+.happyHeading h2 {
+    color: #00acff;
+}
+.card1{
+    background: url(images/circle.png) no-repeat;
+    background-size: contain;
+    width: 161px;
+    height: 160px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    box-shadow: 0 0 0 #000;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 h2 {
+    font-size: 22px;
+    line-height: normal;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.card2{
+    background: url(images/circle.png) no-repeat;
+    background-size: contain;
+    width: 161px;
+    height: 160px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    box-shadow: 0 0 0 #000;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2 h2 {
+    font-size: 22px;
+    line-height: normal;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.card3{
+    background: url(images/circle.png) no-repeat;
+    background-size: contain;
+    width: 161px;
+    height: 160px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    box-shadow: 0 0 0 #000;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card3 h2 {
+    font-size: 22px;
+    line-height: normal;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.whyOuter{
+    background-color: #282626;
+}
+.whyHeading h2{
+    color: #00acff;
+}
+.whycardInner{
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 25px;
+}
+.footerOuter{
+    background-color: #030f38;
+}
+
+footer{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+.iplImage img{
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        /* object-fit: cover; */
+}
+.aminity1 img{
+    width: 100%;
+        aspect-ratio: 16 / 9;
+}
+
+/* ✅ Mobile & Tablet Responsive Fixes */
+@media (max-width: 992px) { /* Tablet & Mobile */
+
+    .modalImg img, .welcomeImg img {
+        width: 100%; /* Images को Responsive बनाया */
+    }
+
+    .welcomeText h1 {
+        text-align: center; /* Center align on mobile */
+    }
+
+    .cta {
+        display: flex;
+        flex-direction: column; /* Buttons को Stack किया */
+        gap: 10px;
+    }
+
+    .cta1 button, .cta2 button {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .happyClientCard .row {
+        align-items: center;
+    }
+
+
+    .whycardInner {
+        margin-bottom: 10px;
+    }
+}
+
+/* ✅ Mobile Optimization */
+@media (max-width: 576px) { /* Smartphones */
+    .logoIMg img {
+        display: block;
+        margin: 0 auto;
+    }
+.welcomeOuter{
+    position: relative;
+    right: 10%;
+}
+    .cta1 button, .cta2 button {
+        width: 100%;
+    }
+
+    .card1, .card2, .card3 {
+        width: 171px;
+        height: 171px;
+    }
+
+    .card1 h2, .card2 h2, .card3 h2 {
+        font-size: 18px;
+    }
+
+    .iplImage img, .aminity1 img {
+        aspect-ratio: auto;
+        height: auto;
+    }
+
+    .whycardInner {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .whyCards .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* First 2 Cards */
+    .whyCards .row .col-6:nth-child(1),
+    .whyCards .row .col-6:nth-child(2) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* Single Card (Centered) */
+    .whyCards .row .col-12 {
+        display: flex;
+        justify-content: center;
+    }
+    .whyCards .row .col-12 .whycardInner {
+        width: 50%;
+    }
+
+    /* Last 2 Cards */
+    .whyCards .row .col-6:nth-child(4),
+    .whyCards .row .col-6:nth-child(5) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* Ensure all cards have same height */
+    .whycardInner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    /* Font Size Adjustment for Mobile */
+    .whyCardContent h2 {
+        font-size: 18px; /* Mobile में 16px */
+        line-height: 1.4;
+    }
+    .getId button {
+    padding: 20px 0px;
+    }
+    .getId button a {
+        padding: 0 19px;
+        font-weight: bold;
+    }
+    .cta1 button, .cta2 button{
+        padding: 20px 7px;
+    }
+    .modalImg{
+        position: relative;
+        left: 20%;
+    }
+    .modalImg img, .welcomeImg img{
+        width: 180px;
+    }
+    .welcomeText{
+        position: absolute;
+        top: 75%;
+        left: 20%;
+    }
+    .getId button a{
+        font-size: 19px;
+    }
+}
+
+.bestGameListOuter{
+    background-color: #282626;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.bestGameListOuter h2{
+    color: #00acff;
+}
